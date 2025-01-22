@@ -84,7 +84,7 @@ a:hover {
 
 
 .carbox {
-  background-color: var(--headerColor);
+  background-color: var(--headerCOlor);
   border-radius: 12px;
   box-shadow: 0 2px 4px -2px rgb(0 0 0 / 15%);
 }
