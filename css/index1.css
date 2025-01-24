@@ -114,7 +114,7 @@
 .li3-box {
   position: relative;
   min-height: 380px;
-  background-image: url("../img/android.gif");
+  background-image: url("../img/iot.jpeg");
   background-size: 100%;
 }
 
@@ -230,6 +230,11 @@
 .li5-box {
   position: relative;
   overflow: hidden;
+  width: 100%; /* 自适应宽度 */
+  max-width: 1280px; /* 最大宽度 */
+  height: auto; /* 高度自适应 */
+  aspect-ratio: 16 / 9; /* 保持16:9的比例 */
+  overflow: hidden; /* 确保内容不会溢出 */
 }
 
 svg {
@@ -285,7 +290,7 @@ svg {
   display: inline-block;
   height: 400px;
   box-sizing: border-box;
-  width: 700px;
+  width: 710px;
   text-align: center;
   padding: 0px 0px;
 }
