@@ -52,6 +52,22 @@
     }
   })
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactBtn = document.getElementById('contactBtn');
+    const wxQrCode = document.getElementById('wxQrCode');
+    
+    contactBtn.addEventListener('click', function() {
+      wxQrCode.style.display = 'block';
+    });
+    
+    // 点击二维码外部区域关闭
+    document.addEventListener('click', function(e) {
+      if (!wxQrCode.contains(e.target) && e.target !== contactBtn) {
+        wxQrCode.style.display = 'none';
+      }
+    });
+  });
+
 
   // //一段正则，匹配所有_min.的图片src属性
 	// var test = /_min\./

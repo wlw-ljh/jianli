@@ -233,7 +233,7 @@ img {
 /* 导航 */ 
 /* 黑色主题背景 */
 .navigation.active{ 
-  background-image: url("../img/back.jpg") !important;
+  background-image: url("../img/back.jpeg") !important;
   
 }
 /* 默认主题 */
@@ -243,7 +243,7 @@ img {
   background-color: transparent;
   height: 600px;
   border-radius: 20px;
-  background-image: url("../img/back.jpg");
+  background-image: url("../img/back.jpeg");
   background-attachment: fixed;
   background-size: 100%;
   background-repeat: no-repeat;

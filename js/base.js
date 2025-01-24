@@ -18,6 +18,7 @@
     }
  
 
+    
   
 
   function initActive () {
@@ -90,9 +91,15 @@
     }
 })
 
-  
+// 播放记账本视频
+function playShopVideo(videoSrc = './img/project/shop.mp4') {
+  document.getElementById('zhezhao').classList.add('active');
+  var video = document.getElementById('videoResumeC');
+  video.src = videoSrc;  // 使用传入的视频源
+  video.play();
+}
 
-   
+// 关闭视频
 $('#zhezhao>.close').click(function () {
   console.log('遮罩层')
   if ($('#zhezhao').hasClass('active')) {

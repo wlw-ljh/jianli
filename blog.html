@@ -106,7 +106,7 @@
               <span class="status">
                 <i>李嘉汉</i>
               </span>
-              <img src="./img/touxiang.jpg" alt="">
+              <img src="./img/touxiang.jpeg" alt="">
             </div>
             <h3>李嘉汉的个人简历</h3>
             <p class="me-hover">
@@ -115,7 +115,8 @@
           </div>
           <div class="borderbotm"></div>
           <div class="lianxi-list">
-            <a title="wx:wlw_ljh">
+            <a title="wx:wlw_ljh" class="show-on-hover">
+              <img src="./img/wx.jpeg" alt="WeChat QR Code" class="hidden" />
               <svg t="1649145899448" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="14861" width="15" height="15">
                 <path
@@ -123,7 +124,7 @@
                   p-id="14862"></path>
               </svg>
             </a>
-            <a title="github:wttAndroid" href="https://gitee.com/wttAndroid">
+            <a title="github:WLW-LJH" href="https://github.com/wlw-ljh">
               <svg t="1649145950732" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="16367" width="15" height="15">
                 <path
@@ -142,7 +143,8 @@
                   p-id="17272"></path>
               </svg>
             </a>
-            <a title="QQ:2925095987">
+            <a title="QQ:2925095987" class="show-on-hover">
+              <img src="./img/qq.jpeg" alt="WeChat QR Code" class="hidden" />
               <svg t="1649146096754" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="18277" width="15" height="15">
                 <path
@@ -173,7 +175,12 @@
           </div>
           <div class="borderbotm"></div>
           <div class="buttom-box ">
-            <a class="button" href="Mailto:2925095987@qq.com?Subject=邮箱标题&amp;Body=邮箱内容！">联系我</a>
+            <a class="button" id="contactBtn">
+              联系我
+            </a>
+            <div id="wxQrCode" class="wx-qrcode" style="display: none;">
+              <img src="./img/wx.jpeg" alt="WeChat QR Code">
+            </div>
           </div>
         </div>
       </div>

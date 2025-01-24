@@ -20,6 +20,18 @@
   </div> -->
 
 
+  <div class="zhezhao" id="zhezhao">
+    <span class="close">
+      <svg t="1649229755294" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4692" width="32" height="32">
+        <path d="M512 451.669333L279.168 218.837333a42.666667 42.666667 0 1 0-60.330667 60.330667L451.669333 512 218.837333 744.832a42.666667 42.666667 0 0 0 60.330667 60.330667L512 572.330667l232.832 232.832a42.666667 42.666667 0 0 0 60.330667-60.330667L572.330667 512l232.832-232.832a42.666667 42.666667 0 1 0-60.330667-60.330667L512 451.669333z"></path>
+      </svg>
+    </span>
+    <div id="videoResume">
+      <video id="videoResumeC" controls name="media">
+        <source src="./img/project/shop.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
   <!-- 主要页面 -->
   <div class="box">
 
@@ -108,7 +120,7 @@
               <span class="status">
                 <i>李嘉汉</i>
               </span>
-              <img src="./img/touxiang.jpg" alt="">
+              <img src="./img/touxiang.jpeg" alt="">
             </div>
             <h3>李嘉汉的个人简历</h3>
             <p class="me-hover">
@@ -117,7 +129,8 @@
           </div>
           <div class="borderbotm"></div>
           <div class="lianxi-list">
-            <a title="wx:wlw_ljh">
+            <a title="wx:wlw_ljh" class="show-on-hover">
+              <img src="./img/wx.jpeg" alt="WeChat QR Code" class="hidden" />
               <svg t="1649145899448" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="14861" width="15" height="15">
                 <path
@@ -125,7 +138,7 @@
                   p-id="14862"></path>
               </svg>
             </a>
-            <a title="github:wttAndroid" href="https://gitee.com/wttAndroid">
+            <a title="github:WLW-LJH" href="https://github.com/wlw-ljh">
               <svg t="1649145950732" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="16367" width="15" height="15">
                 <path
@@ -144,7 +157,8 @@
                   p-id="17272"></path>
               </svg>
             </a>
-            <a title="QQ:2925095987">
+            <a title="QQ:2925095987" class="show-on-hover">
+              <img src="./img/qq.jpeg" alt="WeChat QR Code" class="hidden" />
               <svg t="1649146096754" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="18277" width="15" height="15">
                 <path
@@ -175,7 +189,12 @@
           </div>
           <div class="borderbotm"></div>
           <div class="buttom-box ">
-            <a class="button" href="Mailto:2925095987@qq.com?Subject=邮箱标题&amp;Body=邮箱内容！">联系我</a>
+            <a class="button" id="contactBtn">
+              联系我
+            </a>
+            <div id="wxQrCode" class="wx-qrcode" style="display: none;">
+              <img src="./img/wx.jpeg" alt="WeChat QR Code">
+            </div>
           </div>
         </div>
       </div>
@@ -190,18 +209,18 @@
           </div>
           <div class="content-li li1">
             <div class="li1-box">
-              <a class="li1-box-item carbox" >
-                <img src="./img/project/508.png" alt="">
+              <a class="li1-box-item carbox" onclick="playShopVideo('./img/project/shop.mp4')">
+                <img src="./img/project/shop.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>记账本</h6>
-                  <span>记账本</span>
+                  <h6>Android APP</h6>
+                  <span>在线购物</span>
                 </div>
               </a>
-              <a class="li1-box-item carbox" >
-                <img src="./img/project/wangyiyun.png" alt="">
+              <a class="li1-box-item carbox" onclick="playShopVideo('./img/project/as_iot.mp4')">
+                <img src="./img/project/iot.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>基于vue的网易云播放器</h6>
-                  <span>网易云播放器</span>
+                  <h6>基于MQTT协议接入华为云物联网设备</h6>
+                  <span>华为物联网云设备app</span>
                 </div>
               </a>
             </div>
@@ -216,18 +235,18 @@
           </div>
           <div class="content-li li1">
             <div class="li1-box">
-              <a class="li1-box-item carbox" >
-                <img src="./img/project/508.png" alt="">
+              <a class="li1-box-item carbox" onclick="playShopVideo('./img/project/wlw_aliyun.mp4')">
+                <img src="./img/project/wlw_aliyun.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>记账本</h6>
-                  <span>记账本</span>
+                  <h6>阿里云</h6>
+                  <span>设备属性上传与下发</span>
                 </div>
               </a>
-              <a class="li1-box-item carbox" >
-                <img src="./img/project/wangyiyun.png" alt="">
+              <a class="li1-box-item carbox" onclick="playShopVideo('./img/project/wlw_xdalu.mp4')">
+                <img src="./img/project/wlw_xdalu.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>基于vue的网易云播放器</h6>
-                  <span>网易云播放器</span>
+                  <h6>新大陆云</h6>
+                  <span>光照控制开关</span>
                 </div>
               </a>
             </div>
@@ -243,21 +262,53 @@
           <div class="content-li li1">
             <div class="li1-box">
               <a class="li1-box-item carbox" >
-                <img src="./img/project/508.png" alt="">
+                <img src="./img/project/deep_loss.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>记账本</h6>
-                  <span>记账本</span>
+                  <h6>模型训练</h6>
+                  <span>模型准确率为0.945,迭代14次后开始趋于收敛</span>
                 </div>
               </a>
               <a class="li1-box-item carbox" >
-                <img src="./img/project/wangyiyun.png" alt="">
+                <img src="./img/project/deep_banana.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>基于vue的网易云播放器</h6>
-                  <span>网易云播放器</span>
+                  <h6>水果分类</h6>
+                  <span>模型测试预测香蕉,预测正确</span>
                 </div>
               </a>
             </div>
           </div>
+
+          <div class="content-li li3">
+            <h3>
+              <span>物联网硬件技术</span>
+              <div class="borderbotm"></div>
+              <span>04</span>
+            </h3>
+          </div>
+          <div class="content-li li1">
+            <div class="li1-box">
+              <a class="li1-box-item carbox">
+                <img src="./img/project/PCB1.jpeg" alt="">
+                <div class="boxitem-title">
+                  <h6>物联网数据采集器</h6>
+                  <span>PCB图</span>
+                </div>
+              </a>
+              <a class="li1-box-item carbox">
+                <img src="./img/project/PCB2.jpeg" alt="">
+                <div class="boxitem-title">
+                  <h6>物联网数据采集器</h6>
+                  <span>PCB 2D效果图</span>
+                </div>
+              </a>
+              <a class="li1-box-item carbox">
+                <img src="./img/project/电路图.jpeg" alt="">
+                <div class="boxitem-title">
+                  <h6>物联网数据采集器</h6>
+                  <span>电路原理图</span>
+                </div>
+              </a>
+            </div>
 
           <div class="content-li li3">
             <h3>
@@ -268,18 +319,18 @@
           </div>
           <div class="content-li li1">
             <div class="li1-box">
-              <a class="li1-box-item carbox" >
-                <img src="./img/project/508.png" alt="">
+              <a class="li1-box-item carbox" onclick="playShopVideo('./img/project/自动踢球.mp4')">
+                <img src="./img/project/op1.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>记账本</h6>
-                  <span>记账本</span>
+                  <h6>机器视觉</h6>
+                  <span>自动踢球</span>
                 </div>
               </a>
-              <a class="li1-box-item carbox" >
-                <img src="./img/project/wangyiyun.png" alt="">
+              <a class="li1-box-item carbox" onclick="playShopVideo('./img/project/自动寻线.mp4')">
+                <img src="./img/project/op2.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>基于vue的网易云播放器</h6>
-                  <span>网易云播放器</span>
+                  <h6>机器视觉</h6>
+                  <span>识别不同颜色的十字路口</span>
                 </div>
               </a>
             </div>
@@ -295,20 +346,36 @@
           <div class="content-li li1">
             <div class="li1-box">
               <a class="li1-box-item carbox" >
-                <img src="./img/project/508.png" alt="">
+                <img src="./img/project/RFID1.jpg" alt="">
                 <div class="boxitem-title">
-                  <h6>记账本</h6>
-                  <span>记账本</span>
+                  <h6>百科荣创射频设备</h6>
                 </div>
               </a>
               <a class="li1-box-item carbox" >
-                <img src="./img/project/wangyiyun.png" alt="">
+                <img src="./img/project/RFID4.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>基于vue的网易云播放器</h6>
-                  <span>网易云播放器</span>
+                  <h6>基于射频识别技术</h6>
+                  <span>低频识别卡号信息</span>
                 </div>
               </a>
-            </div>
+            </div> 
+            <div class="content-li li1">
+              <div class="li1-box">
+                <a class="li1-box-item carbox" >
+                  <img src="./img/project/RFID3.jpeg" alt="">
+                  <div class="boxitem-title">
+                    <h6>基于射频识别技术</h6>
+                    <span>校园NFC读卡门禁系统</span>
+                  </div>
+                </a>
+                <a class="li1-box-item carbox" >
+                  <img src="./img/project/RFID2.jpeg" alt="">
+                  <div class="boxitem-title">
+                    <h6>基于射频识别技术</h6>
+                    <span>校园食堂饭卡刷卡扣费</span>
+                  </div>
+                </a>
+              </div> 
           </div>
 
           <div class="content-li li3">
@@ -320,18 +387,18 @@
           </div>
           <div class="content-li li1">
             <div class="li1-box">
-              <a class="li1-box-item carbox" >
-                <img src="./img/project/508.png" alt="">
+              <a class="li1-box-item carbox" onclick="playShopVideo('./img/project/奇大1.mp4')">
+                <img src="./img/project/奇大.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>记账本</h6>
-                  <span>记账本</span>
+                  <h6>C#应用程序(1)</h6>
+                  <span>对数据进行增删查改、备份和还原</span>
                 </div>
               </a>
-              <a class="li1-box-item carbox" >
-                <img src="./img/project/wangyiyun.png" alt="">
+              <a class="li1-box-item carbox" onclick="playShopVideo('./img/project/奇大2.mp4')">
+                <img src="./img/project/奇大.jpeg" alt="">
                 <div class="boxitem-title">
-                  <h6>基于vue的网易云播放器</h6>
-                  <span>网易云播放器</span>
+                  <h6>C#应用程序(2)</h6>
+                  <span>对数据进行增删查改、备份和还原</span>
                 </div>
               </a>
             </div>
@@ -348,5 +415,13 @@
 <script src="./js/base.js"></script>
 <script type="text/javascript" src="./js/paper-full.min.js"></script>
 <script type="text/javascript" src="./js/canvas.js"></script>
+<script>
+function playShopVideo(videoSrc = './img/project/shop.mp4') {
+  document.getElementById('zhezhao').classList.add('active');
+  var video = document.getElementById('videoResumeC');
+  video.src = videoSrc;  // 使用传入的视频源
+  video.play();
+}
+</script>
 
 </html>
