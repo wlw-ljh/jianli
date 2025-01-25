@@ -230,11 +230,6 @@
 .li5-box {
   position: relative;
   overflow: hidden;
-  width: 100%; /* 自适应宽度 */
-  max-width: 1280px; /* 最大宽度 */
-  height: auto; /* 高度自适应 */
-  aspect-ratio: 16 / 9; /* 保持16:9的比例 */
-  overflow: hidden; /* 确保内容不会溢出 */
 }
 
 svg {
